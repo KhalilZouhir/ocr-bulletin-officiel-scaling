@@ -25,6 +25,8 @@ The design goal is **scalability, modularity, and efficient GPU utilization**, a
 ## Virtual Environments & Requirements
 
 Two environments are required to avoid dependency conflicts.
+> ⚠️ **IMPORTANT**
+> the 2 VENVs already exists do NOT MAKE ANY CHANGES ON THESE 2 VENVS plz 
 
 ### 1. Chandra Environment
 
