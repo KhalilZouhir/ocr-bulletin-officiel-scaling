@@ -38,7 +38,25 @@ conda create -n khalil_vllm python=3.10 -y
 conda activate khalil_vllm
 pip install -r khalil_vllm_packages.txt
 ```
+- or
+```bash
+# 1) CUDA toolkit (keep as is)
+conda install -y -c nvidia -c conda-forge cuda-toolkit=12.4 ninja cmake
 
+# 2) PyTorch (keep as is)
+pip install --upgrade pip setuptools wheel
+pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
+
+# 3) Install latest transformers FIRST
+pip install --upgrade transformers
+
+# 4) Install vLLM (latest version for Qwen3-VL support)
+pip install --upgrade vllm
+
+# 5) Other dependencies
+pip install accelerate cffi lazy-loader packaging soxr
+```
+  
 This environment is used **only for Chandra OCR (vLLM runtime)**.
 
 ---
@@ -52,6 +70,14 @@ This environment is used **only for Chandra OCR (vLLM runtime)**.
 conda create -n deepseek_khalil python=3.10 -y
 conda activate deepseek_khalil
 pip install -r deepseek_khalil_packages.txt
+```
+-or
+
+```bash
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
+wget https://github.com/vllm-project/vllm/releases/download/v0.8.5/vllm-0.8.5+cu118-cp38-abi3-manylinux1_x86_64.whl
+pip install vllm-0.8.5+cu118-cp38-abi3-manylinux1_x86_64.whl
+pip install -r ds_requirements.txt
 ```
 
 This environment is used **only for post‑processing failed OCR pages**.
