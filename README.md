@@ -175,6 +175,8 @@ chmod +x automation.sh
   - OCR scripts
   - PBS job files
   - Required directory structure
+  - 
+<img width="790" height="594" alt="image" src="https://github.com/user-attachments/assets/2cddcfc1-5880-4600-a0d3-a4a760938620" />
 
 ---
 
