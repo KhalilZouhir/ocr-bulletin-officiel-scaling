@@ -327,4 +327,4 @@ This setup is production‑ready for large Bulletin Officiel OCR workloads on IN
 
 ## Demo
 
-check the MP4 File in the repo 
+check the MP4 File in the repo
