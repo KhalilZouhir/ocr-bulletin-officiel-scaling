@@ -65,7 +65,7 @@ This environment is used **only for post‑processing failed OCR pages**.
 Clone Chandra locally using Hugging Face CLI:
 
 ```bash
-huggingface-cli clone datalab-to/chandra ./chandra
+huggingface-cli download datalab-to/chandra --local-dir ./chandra
 ```
 
 **Local path used in this setup:**
@@ -79,7 +79,7 @@ huggingface-cli clone datalab-to/chandra ./chandra
 ### DeepSeek‑OCR
 
 ```bash
-huggingface-cli clone deepseek-ai/DeepSeek-OCR ./DeepSeek‑OCR
+huggingface-cli download deepseek-ai/DeepSeek-OCR --local-dir ./DeepSeek‑OCR
 ```
 
 **Local path used in this setup:**
