@@ -328,3 +328,5 @@ This setup is production‑ready for large Bulletin Officiel OCR workloads on IN
 ## Demo
 
 check the MP4 File in the repo
+
+## If u wanna run everything locally without using HPC jobs please refer to the notebook "Full_guide_OCR_bulletin_officiel_locally.ipynb"
